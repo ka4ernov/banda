@@ -66,7 +66,6 @@ const AppBar = () => {
         <div className={`${classes.appbar__container} ${themeClass}`}>
             <div className={classes.appbar}>
                 <div className={classes.appbar__logo}>
-                    <div className={`${classes.appbar__logo__rect} ${themeClass}`}>Б</div>
                     <h1 className={classes.appbar__logo__title}>
                         Игры<span className={themeClass}>Банды</span>
                     </h1>
@@ -82,9 +81,9 @@ const AppBar = () => {
                                 <div className={classes.link__icon}>
                                     {icon(
                                         isActive
-                                            ? "#33c863"
+                                            ? "#03A9F4"
                                             : uiCtx.theme === "light"
-                                            ? "#929292"
+                                            ? "#616161"
                                             : "#fff"
                                     )}
                                 </div>
