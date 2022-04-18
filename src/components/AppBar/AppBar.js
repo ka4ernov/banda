@@ -3,7 +3,6 @@ import UiContext from './../../store/ui-context';
 import classes from './AppBar.module.scss';
 
 import DashboardSVG from './../../assets/DashboardSVG';
-import AllGamesSVG from './../../assets/AllGamesSVG';
 import BilliardSVG from './../../assets/BilliardSVG';
 import TableTennisSVG from './../../assets/TableTennisSVG';
 import CardsSVG from './../../assets/CardsSVG';
@@ -13,36 +12,30 @@ import ToggleSwitch from '../../ui/ToggleSwitch';
 const initialNavList = [
     {
         id: 0,
-        text: "Обзор",
+        text: "Статистика",
         isActive: true,
         icon: (fillColor) => <DashboardSVG fillColor={fillColor} />,
     },
     {
         id: 1,
-        text: "Все игры",
-        isActive: false,
-        icon: (fillColor) => <AllGamesSVG fillColor={fillColor} />,
-    },
-    {
-        id: 2,
         text: "Бильярд",
         isActive: false,
         icon: (fillColor) => <BilliardSVG fillColor={fillColor} />,
     },
     {
-        id: 3,
+        id: 2,
         text: "Теннис",
         isActive: false,
         icon: (fillColor) => <TableTennisSVG fillColor={fillColor} />,
     },
     {
-        id: 4,
+        id: 3,
         text: "Карты",
         isActive: false,
         icon: (fillColor) => <CardsSVG fillColor={fillColor} />,
     },
     {
-        id: 5,
+        id: 4,
         text: "Настройки",
         isActive: false,
         icon: (fillColor) => <SettingsSVG fillColor={fillColor} />,
