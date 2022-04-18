@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import UiContext from '../../store/ui-context';
 
 import classes from './Dashboard.module.scss';
+import Header from './Header/Header';
 
 const Dashboard = () => {
     const uiCtx = useContext(UiContext);
@@ -10,7 +11,9 @@ const Dashboard = () => {
     return (
         <div className={`${classes.scroll} ${themeClass}`}>
             <div className={`${classes.dashboard__container} ${themeClass}`}>
-                <div className={classes.dashboard}></div>
+                <div className={classes.dashboard}>
+                    <Header />
+                </div>
             </div>
         </div>
     );
